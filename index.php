@@ -72,15 +72,15 @@
             Запустите код ниже для проверки доступа, для работы с файлами.
              */
 
-            //if(is_readable($input)){
-            //    echo "readable <br>";
-            //}
-            //if(is_writable($input)){
-            //    echo "writeable <br>";
-            //}
-            //if(is_executable($input)){
-            //    echo "executable <br>";
-            //}
+            if(is_readable($input)){
+               echo "readable <br>";
+            }
+            if(is_writable($input)){
+               echo "writeable <br>";
+            }
+            if(is_executable($input)){
+               echo "executable <br>";
+            }
             ?>
 
 
