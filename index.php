@@ -52,11 +52,11 @@
             fwrite($input_write, "\n". "K-$vasyas_queue");
 
             echo "Номер талона: K-$vasyas_queue<br>";
-            echo "Время ожидания в очереди: $hours час(ов)  $minutes минут";
+            echo "Время ожидания в очереди: $hours час(ов)  $minutes минут <br>";
 
         } else {
             echo "Вы сегодня не успеете!! <br>";
-            echo "Время ожидания в очереди: $hours час(ов)  $minutes минут";
+            echo "Время ожидания в очереди: $hours час(ов)  $minutes минут <br>";
 
             $output_write = fopen ($output, 'a+');
             fwrite($output_write, "\n". "NO $hours : $minutes");
@@ -72,15 +72,15 @@
             Запустите код ниже для проверки доступа, для работы с файлами.
              */
 
-            if(is_readable($input)){
-               echo "readable <br>";
-            }
-            if(is_writable($input)){
-               echo "writeable <br>";
-            }
-            if(is_executable($input)){
-               echo "executable <br>";
-            }
+            // if(is_readable($input)){
+            //    echo "readable <br>";
+            // }
+            // if(is_writable($input)){
+            //    echo "writeable <br>";
+            // }
+            // if(is_executable($input)){
+            //    echo "executable <br>";
+            // }
             ?>
 
 
